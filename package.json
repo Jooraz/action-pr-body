@@ -1,0 +1,20 @@
+{
+    "name": "action-pr-body",
+    "version": "1.0.0",
+    "description": "Github action to enforce Pull Request body conventions",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "github",
+        "actions"
+    ],
+    "author": "Jooraz",
+    "license": "MIT",
+    "dependencies": {
+        "@actions/core": "^1.2.3",
+        "@actions/github": "^2.1.1"
+    }
+}
