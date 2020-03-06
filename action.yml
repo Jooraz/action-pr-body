@@ -1,0 +1,14 @@
+name: 'Pull Request body rules'
+description: 'Github action to enforce Pull Request body conventions'
+author: 'Jooraz'
+inputs:
+  regex_checks:
+    description: 'Multiple regex queries separated by comma to validate body'
+    default: '.+'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'alert-triangle'
+  color: 'gray-dark'
