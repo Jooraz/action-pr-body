@@ -3,7 +3,7 @@ const github = require('@actions/github');
 
 const validEvent = ["pull_request"];
 
-function validateTitlePrefix(body, regexString) {
+function testRegex(body, regexString) {
     const regex = new RegExp(regexString);
     return regex.test(body);
 }
