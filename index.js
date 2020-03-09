@@ -17,8 +17,7 @@ async function exec() {
             return;
         }
 
-        const title = github.context.payload.pull_request.body;
-        core.info(`Pull Request title: "${body}"`);
+        const body = github.context.payload.pull_request.body;
 
         const regexElements = core.getInput("regex_checks");
         core.info(`Regex check: ${regexElements}`);
